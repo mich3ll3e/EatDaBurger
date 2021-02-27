@@ -1,7 +1,13 @@
+body{
+  background-image: url('../picture/burger.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: grey;
 }
 
 .label {
@@ -11,7 +17,7 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  background: aqua;
+  background: grey;
 }
 
 .form-group {
