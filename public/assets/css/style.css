@@ -1,25 +1,33 @@
 body{
-  background-image: url('../picture/burger.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  text-align: center;
+  background: #c06a30;
 }
-li {
+img{
+  background: #c06a30;
+}
+li #newBurg{
   padding: 5px;
   margin: 5px;
   background: grey;
 }
 
-.label {
-  font-weight: bold;
+#submitBtn {
+  background: navy;
+  color:white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 25px 15px 25px;
+  border-radius: 4px;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: grey;
-}
-
-.form-group {
-  margin-bottom: 5px;
+#devour-burger{
+  background:olivedrab;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 25px 15px 25px;
+  border-radius: 4px;
 }
