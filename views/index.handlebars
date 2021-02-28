@@ -1,45 +1,50 @@
 <div class ="container">
 	<div class="row mx-auto justify-content-center">
 		<h1>Eat-Da-Burger!</h1>
-		<img src="assets/picture/burger.jpg" alt="burger">
+	
 	</div>
+	<div>
+		<img src="assets/picture/burger.png" alt="burger">
+	</div>
+		<br>
 
+	<div class="row">	
+		<form class="create-form" align="center">
+			<div class="form-group" align="center">
+    			<input type="text" id="newBurg" name="name" style="width: 300px; height: 50px;" align="center">
+				<br>
+				<button class="btn btn-primary" type="submit" style="margin-top: 10px;" >Submit</button>
+  			</div>
+	
+  			<p>Enter a burger you would like to eat and click "Submit".</p>
+		</form>
+	</div>
+	<br>
 	<div class="row justify-content-center">
 		<div class="col-6">
 			<table>
 		
-		{{#each burgers}}
 		<tr>
-			{{#unless devoured}}
-				<td>{{burger_name}}</td>
-				<td><button id="devour-burger" type="button" data-id="{{id}}" data-newDevour="{{devour}}">Devour It</button></td>
-				
-			{{/unless}}
+			        {{#each burgers}}
+                    {{#unless devoured}}
+                    {{> burger-block devoured=true}}
+                    {{/unless}}
+                    {{/each}}
 		</tr>
-		{{/each}}
 
 		</table>
 		</div>
 
 		<div class="col-6">
 		<ol>
-		{{#each burgers}}
-			{{#if devoured}}
-				<li>{{burger_name}}</li>
-			{{/if}}
-		{{/each}}
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burger-block devoured=false}}
+                    {{/if}}
+                    {{/each}}
 		</ol>
 		</div>
 	</div>
 
-	<div class="row justify-content-center">
-		<form class="create-form">
-			<div class="form-group">
-    			<input type="text" id="newBurg" name="name">
-  			</div>
-			<button type="submit" id= "submitBtn">Submit</button>
-  			<p>Enter a burger you would like to eat and click "Submit".</p>
-		</form>
-	</div>
 
 </div>

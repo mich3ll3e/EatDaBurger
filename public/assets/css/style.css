@@ -1,28 +1,25 @@
 body{
   text-align: center;
-  background: #c06a30;
+  background: #f2c844 !important
 }
 img{
-  background: #c06a30;
+  background: #f2c844 !important
+ 
 }
-li #newBurg{
+.eaten {
+  color: grey;
+  background-color: lightgray !important;
+  border-spacing: 10px !important;
+}
+
+li {
   padding: 5px;
   margin: 5px;
   background: grey;
 }
 
-#submitBtn {
-  background: navy;
-  color:white;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  padding: 15px 25px 15px 25px;
-  border-radius: 4px;
-}
 
-#devour-burger{
+.devour-burger{
   background:olivedrab;
   color: white;
   border: none;
