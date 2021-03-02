@@ -14,3 +14,5 @@ This application uses 4 npm packages. Please run an npm i prior to running the a
 ## Usage
 This application allows you to create a wish list for burgers that you want to try, you can put it on the list and once you devoured the burger, the burger will remove from the list.
 
+## To do
+Figure out why update button does not work.
